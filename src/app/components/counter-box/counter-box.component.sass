@@ -1,0 +1,54 @@
+@import '../../../../node_modules/bourbon-neat/app/assets/stylesheets/neat'
+@import '../../../../node_modules/bourbon-neat/app/assets/stylesheets/neat-helpers'
+@import '../../../colors'
+@import '../../../variables'
+
+.counter-box
+  display: inline-flex
+
+  .counter-box__increment-button, .counter-box__decrement-button
+    box-sizing: border-box
+    border: 1px solid $primary-border
+    background-color: $primary
+    border-radius: 0
+    margin: 0 -4px 0 0 0
+    outline: none
+    width: 40px
+    height: 40px
+    font-size: 20px
+    text-align: center
+    cursor: pointer
+    color: black
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    padding-top: 8px
+    @include media($desktop)
+      width: 30px
+      height: 30px
+      color: black
+      padding: 4px 0 0 0
+
+
+  input
+    box-sizing: border-box
+    margin: 0 0 0 0
+    text-align: center
+    font-size: 20px
+    width: 50px
+    height: 40px
+    outline: none
+    color: black
+    border: #333333
+    border-right-color: transparent
+    @include media($desktop)
+      height: 30px
+      width: 35px
+      font-size: 14px
+
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0

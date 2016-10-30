@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CounterBoxComponent } from './components/counter-box/counter-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterBoxComponent
   ],
   imports: [
     BrowserModule,
