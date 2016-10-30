@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-counter-box',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter-box.component.sass']
 })
 export class CounterBoxComponent implements OnInit {
-  counterValue = 1;
+  @Input() counterValue;
+
   constructor() { }
 
   ngOnInit() {
